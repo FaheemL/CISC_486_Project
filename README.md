@@ -1,6 +1,27 @@
 # CISC_486_Project
 This is the GitHub repository for our course project in CISC 486. 
 
+Assignment #2: FSM
+
+Link to video demo: https://youtu.be/vQOx-CvCsIs
+
+Diagram of FSM:
+
+![FSM](Enemy_FSM.PNG)
+
+Description of FSM:
+
+The Finite State Machine is composed of 3 main states:
+1. Idle 
+2. Run 
+3. Attack
+
+There are also two boolean conditions: isRunning & isAttacking.
+
+The first state is Idle, when the enemy is not moving as they do not detect player near them. When the player gets within the detection radius to the enemy, the state transitions from idle to run. This transition sets the isRunning boolean from false to true. In this state the enemy is now chasing after the player. The enemy will stay in this state until they get close enough to the player to where they start attacking them, triggering the isAttacking boolean to switch from false to true. The enemy will stay in this state until the player gets far enough away from them, at which point the enemy will transition back to the previous state. 
+
+
+
 CISC 486 Project Proposal
 
 
