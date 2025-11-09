@@ -209,6 +209,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e8297b6e5848451c9080c46da51a5e4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5691732432145359728}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e8297b6e5848451c9080c46da51a5e4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8445459084680347999}
   m_SourcePrefab: {fileID: 100100000, guid: 6e8297b6e5848451c9080c46da51a5e4, type: 3}
 --- !u!4 &6981957514526291231 stripped
 Transform:
@@ -286,3 +289,24 @@ MonoBehaviour:
   pSpeed: 5
   pRotSpd: 100
   pJmpSpd: 5
+--- !u!114 &-8445459084680347999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7759479998771441573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52adc6843a180f44afdfeeda19b2462, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharStats
+  stats: {fileID: 0}
+  health:
+    value: 0
+    maxValue: -1
+  currentHealth: 0
+  offence:
+    value: 0
+    maxValue: -1
+  dead: 0
