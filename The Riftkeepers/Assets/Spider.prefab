@@ -78,6 +78,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spider
       objectReference: {fileID: 0}
+    - target: {fileID: 100140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 400140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.00566
@@ -229,6 +233,7 @@ MonoBehaviour:
     value: 0
     maxValue: -1
   dead: 0
+  imortal: 0
 --- !u!4 &2768845049297747753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}

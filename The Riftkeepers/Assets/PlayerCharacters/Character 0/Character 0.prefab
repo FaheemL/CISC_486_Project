@@ -189,6 +189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character 0
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e8297b6e5848451c9080c46da51a5e4, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 6e8297b6e5848451c9080c46da51a5e4, type: 3}
       propertyPath: m_Controller
       value: 
@@ -301,7 +305,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e52adc6843a180f44afdfeeda19b2462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharStats
-  stats: {fileID: 0}
   health:
     value: 0
     maxValue: -1
@@ -310,3 +313,4 @@ MonoBehaviour:
     value: 0
     maxValue: -1
   dead: 0
+  imortal: 0

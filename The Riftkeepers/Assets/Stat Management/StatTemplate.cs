@@ -4,7 +4,8 @@ public class StatTemplate : ScriptableObject
 {
 
     public int health = 100;
-    public int offence = 10;
+    public int offence = 0;
+    
 
 
 }
@@ -17,6 +18,7 @@ public class EntityStat : MonoBehaviour
     public int currentHealth;
     public Stat offence;
     public bool dead = false;
+    public bool imortal = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,6 +39,7 @@ public class EntityStat : MonoBehaviour
             if (currentHealth > health.getModifiedStat())
             {
                 currentHealth = health.getModifiedStat();
+                Debug.Log("Is at full health");
             }
         }
 
@@ -47,13 +50,17 @@ public class EntityStat : MonoBehaviour
             if (currentHealth < 0)
             {
                 currentHealth = 0;
+                Debug.Log("CHp reached 0");
             }
         }
 
-        if (currentHealth == 0)
+        if (currentHealth == 0 && !imortal)
         {
             dead = true;
+            Debug.Log("Is dead");
         }
+
+        
     }
 
     // Update is called once per frame

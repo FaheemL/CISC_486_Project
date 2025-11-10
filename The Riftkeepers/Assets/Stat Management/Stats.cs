@@ -7,7 +7,7 @@ using System.Linq;
 [System.Serializable]
 public class Stat
 {
-    public int value;
+    public int value = 0;
     public int maxValue = -1;
 
     private readonly List<Modifier> activeModifiers;
