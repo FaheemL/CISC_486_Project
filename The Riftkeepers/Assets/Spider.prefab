@@ -78,6 +78,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spider
       objectReference: {fileID: 0}
+    - target: {fileID: 100140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 400140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.00566
@@ -139,6 +143,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2791841184078837866}
+    - targetCorrespondingSourceObject: {fileID: 100140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6761433208387133090}
   m_SourcePrefab: {fileID: 100100000, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
 --- !u!1 &2768845049297511177 stripped
 GameObject:
@@ -206,6 +213,27 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 0.47205067, z: 1.4298544}
   m_Center: {x: 0, y: 0.26397467, z: -0.1248298}
+--- !u!114 &6761433208387133090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2768845049297511177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0002ed4a7b1cfe94bbe771b2727a15b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::spide_stat
+  health:
+    value: 0
+    maxValue: -1
+  currentHealth: 0
+  offence:
+    value: 0
+    maxValue: -1
+  dead: 0
+  imortal: 0
 --- !u!4 &2768845049297747753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}

@@ -9,7 +9,7 @@ public class CharMovement : MonoBehaviour
     private InputAction pLookAct;
 
     private Vector2 pVelocity;
-    private Vector2 pGaze;
+    
 
     private Animator pAnimator;
     private Rigidbody pRigBod;
@@ -37,7 +37,7 @@ public class CharMovement : MonoBehaviour
     private void Awake(){
 
         pMoveAct = InputSystem.actions.FindAction("Move");
-        pLookAct = InputSystem.actions.FindAction("Look");
+        
 
         pAnimator = GetComponent<Animator>();
         pRigBod = GetComponent<Rigidbody>();
@@ -47,7 +47,7 @@ public class CharMovement : MonoBehaviour
     private void Update(){
         
         pVelocity = pMoveAct.ReadValue<Vector2>();
-        pGaze = pLookAct.ReadValue<Vector2>();
+       
 
 
 

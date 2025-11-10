@@ -1,0 +1,21 @@
+using UnityEditor.SceneManagement;
+using UnityEngine;
+
+public class enemyStats : EntityStat
+{
+    
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (this.dead)
+        {
+            Destroy(gameObject);
+        }
+    }
+}
