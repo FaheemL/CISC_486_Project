@@ -5,6 +5,10 @@ Assignment #2: FSM
 
 Link to video demo: https://youtu.be/vQOx-CvCsIs
 
+Assignment #3: NPC
+
+Link to video demo: https://youtu.be/-GRgh2_eTqQ
+
 Diagram of FSM:
 
 ![FSM](Enemy_FSM.PNG)
