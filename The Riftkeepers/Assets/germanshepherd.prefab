@@ -4859,8 +4859,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.22850768
-  m_Center: {x: 0, y: 0, z: 0.40723848}
+  m_Radius: 0.50485516
+  m_Center: {x: 0, y: -0.4145205, z: 0.407238}
 --- !u!114 &2823877657929842762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5515,6 +5515,7 @@ MonoBehaviour:
     value: 0
     maxValue: -1
   dead: 0
+  imortal: 0
 --- !u!1 &7578027619616389960
 GameObject:
   m_ObjectHideFlags: 0
