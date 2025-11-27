@@ -3,7 +3,8 @@ using UnityEngine;
 
 public class enemyStats : EntityStat
 {
-    
+    private GameObject lstHitBy;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +16,14 @@ public class enemyStats : EntityStat
     {
         if (this.dead)
         {
+            lstHitBy.GetComponent<CharStats>().updXp(2);
             Destroy(gameObject);
+            
         }
+    }
+
+    public void updLstHitBy(GameObject entity)
+    {
+        lstHitBy = entity;
     }
 }
