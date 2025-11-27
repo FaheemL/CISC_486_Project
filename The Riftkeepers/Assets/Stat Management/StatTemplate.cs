@@ -32,9 +32,10 @@ public class EntityStat : MonoBehaviour
 
     public void changeCHp(int amount)
     {
+        currentHealth += amount;
+
         if (amount > 0)
         {
-            currentHealth += amount;
 
             if (currentHealth > health.getModifiedStat())
             {
@@ -45,7 +46,6 @@ public class EntityStat : MonoBehaviour
 
         else
         {
-            currentHealth -= amount;
 
             if (currentHealth < 0)
             {

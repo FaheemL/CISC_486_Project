@@ -28,7 +28,7 @@ public class spider_m : MonoBehaviour
 
     void Update()
     {
-        if (player == null) return;
+        
 
         Vector3 direction = (player.position - transform.position);
         direction.y = 0;
