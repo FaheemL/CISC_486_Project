@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 4358407727391316375, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 169551188}
+      objectReference: {fileID: 0}
     - target: {fileID: 7516207853524365234, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
       propertyPath: m_Name
       value: germanshepherd
@@ -459,72 +459,37 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
---- !u!1001 &169551187
-PrefabInstance:
+--- !u!1 &639867938
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8445459084680347999, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: offence.value
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 551.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.1129622
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 283.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.0099401465
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.9999506
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -178.861
-      objectReference: {fileID: 0}
-    - target: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7759479998771441573, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-      propertyPath: m_Name
-      value: Character 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
---- !u!4 &169551188 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6981957514526291231, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-  m_PrefabInstance: {fileID: 169551187}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 639867939}
+  m_Layer: 0
+  m_Name: spawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &639867939
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639867938}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 546.7, y: 9.34, z: 284.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &873139686
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +613,7 @@ PrefabInstance:
     - target: {fileID: 1125339268984861133, guid: 900ee2f7804c881459c4fa9794dbcd75, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 169551188}
+      objectReference: {fileID: 0}
     - target: {fileID: 2768845049297511177, guid: 900ee2f7804c881459c4fa9794dbcd75, type: 3}
       propertyPath: m_Name
       value: Spider
@@ -734,7 +699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2df52af707c64547813e4982f7e3b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyManager
-  player: {fileID: 1584908143}
+  player: {fileID: 0}
   enemy1: {fileID: 1979620046}
 --- !u!4 &1166039853
 Transform:
@@ -788,11 +753,101 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 4997da8ac4f2a1a42b499550e2b76491, type: 2}
   m_BuildHeightMesh: 0
---- !u!1 &1584908143 stripped
+--- !u!1 &1573225712
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7759479998771441573, guid: 9a1d71f3d03a1db4eb6d41e8e876952f, type: 3}
-  m_PrefabInstance: {fileID: 169551187}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1573225715}
+  - component: {fileID: 1573225714}
+  - component: {fileID: 1573225713}
+  - component: {fileID: 1573225716}
+  m_Layer: 0
+  m_Name: NetworkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1573225713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573225712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc64ff707d914a64e95f2ac0bf554c09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.Transports.UDPTransport
+  _automaticCloudSetups:
+    _adaptToEdgegap: 1
+  _serverPort: 5000
+  _maxConnections: 100
+  _address: 127.0.0.1
+  _timeoutInSeconds: 5
+  _pollEventsInUpdate: 0
+--- !u!114 &1573225714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573225712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baacc2bfe126d544691d4f39fa3785f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.NetworkManager
+  _stopPlayingOnDisconnect: 0
+  _startServerFlags: 9
+  _startClientFlags: 7
+  _cookieScope: 1
+  _dontDestroyOnLoad: 0
+  _transport: {fileID: 1573225713}
+  _networkPrefabs: {fileID: 11400000, guid: 91b9808fe89f14744bce4d82ba3c186c, type: 2}
+  _networkAssets: {fileID: 0}
+  _networkRules: {fileID: 11400000, guid: d8799083b96579a42b8b2d03e4ceae98, type: 2}
+  _visibilityRules: {fileID: 11400000, guid: 8f014a5bd8dc68646a2a3c0b18c5bbd8, type: 2}
+  _authenticator: {fileID: 0}
+  _tickRate: 20
+  _patchLingeringProcessBug: 0
+--- !u!4 &1573225715
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573225712}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 548.8336, y: 5.57539, z: 279.73303}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1573225716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573225712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ced7bf28cdbee104e8cdc34ab761b039, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.PlayerSpawner
+  playerPrefab: {fileID: 0}
+  _playerPrefab: {fileID: 7811871291700006381, guid: 90c0582b0c863d54a80b26bc9cd93481, type: 3}
+  _ignoreNetworkRules: 0
+  spawnPoints:
+  - {fileID: 639867939}
 --- !u!1 &1979620046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2768845049297511177, guid: 900ee2f7804c881459c4fa9794dbcd75, type: 3}
@@ -897,7 +952,8 @@ SceneRoots:
   - {fileID: 58548847}
   - {fileID: 8696846086782762182}
   - {fileID: 54049492}
-  - {fileID: 169551187}
   - {fileID: 1166039853}
   - {fileID: 873139690}
   - {fileID: 1159876918}
+  - {fileID: 1573225715}
+  - {fileID: 639867939}
