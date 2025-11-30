@@ -21,7 +21,7 @@ Step 1: locate and open the ParrelSync tab on the top of the unity editor then o
 
 Step 2: In the clone manger select create clone, if none are pesent.
 
-step 3: With the present clone click open in new editor.
+step 3: With a clone present click open in new editor.
 
 step 4: Arrange the screens to your liking.
 
