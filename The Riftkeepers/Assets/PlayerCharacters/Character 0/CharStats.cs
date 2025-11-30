@@ -1,5 +1,7 @@
+using PurrNet;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using PurrNet;
 
 
 public class CharStats : EntityStat
@@ -7,6 +9,7 @@ public class CharStats : EntityStat
     public int curXp = 0;
     public int nxtXp = 5;
     private int level = 1;
+    private GameObject boss;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -34,3 +37,5 @@ public class CharStats : EntityStat
         }
     }
 }
+
+

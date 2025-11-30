@@ -238,7 +238,7 @@ MonoBehaviour:
     maxValue: -1
   currentHealth: 100
   offence:
-    value: 10
+    value: 5
     maxValue: -1
   dead: 0
   imortal: 0
