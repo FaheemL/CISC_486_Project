@@ -9,6 +9,20 @@ Assignment #3: NPC
 
 Link to video demo: https://youtu.be/-GRgh2_eTqQ
 
+Assignment # 4: Networking
+
+Link to video demo: https://youtu.be/54GY1T4n01M
+
+Setup and Run instructions:
+-Step 1: locate and open the ParrelSync tab on the top of the unity editor then open the tab and select clone manager.
+-Step 2: In the clone manger select create clone, if none are pesent.
+-step 3: With the present clone click open in new editor.
+-step 4: Arrange the screens to your liking.
+-step 5: Run the Main Menu Scene from the Scenes folder in Assets. Both instances will have to be started on their own.
+Notes: 
+-The main editor will always be the server, with the clones being clients 
+-Demo video begins with a Step and Run follow along if there if needed.
+
 Diagram of FSM:
 
 ![FSM](Enemy_FSM.PNG)
