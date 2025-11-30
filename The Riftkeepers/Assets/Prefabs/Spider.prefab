@@ -293,7 +293,7 @@ MonoBehaviour:
   _minBufferSize: 1
   _maxBufferSize: 2
   _characterControllerPatch: 0
-  _ownerAuth: 1
+  _ownerAuth: 0
   _interpolationTiming: 0
 --- !u!114 &-6645695907105597528
 MonoBehaviour:
@@ -317,7 +317,7 @@ MonoBehaviour:
   _networkRules: {fileID: 0}
   _visitiblityRules: {fileID: 0}
   _animator: {fileID: 7517536324626935243}
-  _ownerAuth: 1
+  _ownerAuth: 0
   _autoSyncParameters: 1
   _dontSyncParameters: []
 --- !u!4 &2768845049297747753 stripped

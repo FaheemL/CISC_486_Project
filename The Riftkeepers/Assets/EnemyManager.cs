@@ -13,7 +13,7 @@ public class EnemyManager : NetworkBehaviour
     public GameObject spawnPoint;
 
     public GameObject enemy1;
-    private float e1Delay = 3.5f;
+    private float e1Delay = 5f;
 
     private float nxtSpwn = 0;
 
