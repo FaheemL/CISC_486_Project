@@ -33,6 +33,8 @@ The main editor will always be the server, with the clones being clients
 
 Demo video begins with a Step and Run follow along if there if needed.
 
+Movement is WASD, and laser fires on it's own.
+
 ---
 
 Diagram of FSM:
