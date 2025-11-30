@@ -149,6 +149,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4139235364595528918}
+    - targetCorrespondingSourceObject: {fileID: 100140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4095208727684735190}
   m_SourcePrefab: {fileID: 100100000, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}
 --- !u!1 &2768845049297511177 stripped
 GameObject:
@@ -189,7 +192,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c2bed3355526043aef048cbbd2d3ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::spider_m
-  player: {fileID: 0}
   moveSpeed: 3
   rotationSpeed: 5
   stopDistance: 1
@@ -259,6 +261,37 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &4095208727684735190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2768845049297511177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817fe5016bd0a2a49a95b6eb338bb132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PurrNet.Runtime::PurrNet.NetworkTransform
+  _isSetup: 0
+  _prefabId: -2147483648
+  _componentIndex: -2147483648
+  _shouldBePooled: 0
+  _parent: {fileID: 0}
+  _invertedPathToNearestParent: 
+  _directChildren: []
+  _networkRules: {fileID: 0}
+  _visitiblityRules: {fileID: 0}
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _syncParent: 1
+  _interpolateSettings: 7
+  _minBufferSize: 1
+  _maxBufferSize: 2
+  _characterControllerPatch: 0
+  _ownerAuth: 1
+  _interpolationTiming: 0
 --- !u!4 &2768845049297747753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400140, guid: bc600cce01eb57a409f4e69025868a2c, type: 3}

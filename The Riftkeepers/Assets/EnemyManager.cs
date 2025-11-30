@@ -2,8 +2,9 @@ using System.Runtime.CompilerServices;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SocialPlatforms;
+using PurrNet;
 
-public class EnemyManager : MonoBehaviour
+public class EnemyManager : NetworkBehaviour
 {
 
 
@@ -15,6 +16,15 @@ public class EnemyManager : MonoBehaviour
     private float e1Delay = 3.5f;
 
     private Vector3 playerLoc;
+
+
+    protected override void OnSpawned(bool asServer)
+    {
+        base.OnSpawned(asServer);
+
+        enabled = isOwner;
+    }
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
