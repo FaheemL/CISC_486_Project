@@ -3,8 +3,9 @@
 public class spider_m : MonoBehaviour
 {
     [Header("References")]
-    public Transform player;
+    
     private Animator animator;
+    private GameObject cloPl;
 
     [Header("Movement Settings")]
     public float moveSpeed = 3f;
@@ -28,58 +29,93 @@ public class spider_m : MonoBehaviour
 
     void Update()
     {
-        
-
-        Vector3 direction = (player.position - transform.position);
-        direction.y = 0;
-
-        float distance = direction.magnitude;
-        direction.Normalize();
-
-
-        if (!isAggroed && distance <= aggroRange)
-        {
-            isAggroed = true;
-
-        }
-
-
         bool isMoving = false;
         bool isAttacking = false;
 
-        if (isAggroed)
+        float distance = FindClosestPlayer();
+        if (cloPl != null)
         {
+            Vector3 direction = (cloPl.transform.position - transform.position);
+            direction.y = 0;
 
-            if (direction != Vector3.zero)
+            direction.Normalize();
+
+
+            if (!isAggroed && distance <= aggroRange)
             {
-                Quaternion lookRotation = Quaternion.LookRotation(direction);
-                transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
+                isAggroed = true;
+
             }
 
-            if (distance > stopDistance)
+
+
+
+            if (isAggroed)
             {
 
-                transform.position += transform.forward * moveSpeed * Time.deltaTime;
-                isMoving = true;
-                hitbox?.DeactivateHitbox();
+                if (direction != Vector3.zero)
+                {
+                    Quaternion lookRotation = Quaternion.LookRotation(direction);
+                    transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
+                }
+
+                if (distance > stopDistance)
+                {
+
+                    transform.position += transform.forward * moveSpeed * Time.deltaTime;
+                    isMoving = true;
+                    hitbox?.DeactivateHitbox();
+                }
+                else
+                {
+
+                    isAttacking = true;
+                    hitbox?.ActivateHitbox();
+                }
             }
             else
             {
 
-                isAttacking = true;
-                hitbox?.ActivateHitbox();
+                isMoving = false;
+                isAttacking = false;
+                hitbox?.DeactivateHitbox();
             }
-        }
-        else
-        {
 
-            isMoving = false;
-            isAttacking = false;
-            hitbox?.DeactivateHitbox();
+
         }
+        
 
 
         animator.SetBool("isRunning", isMoving);
         animator.SetBool("isAttacking", isAttacking);
     }
+
+
+    float FindClosestPlayer()
+    {
+        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+        GameObject result = null;
+        float resDist = float.MaxValue;
+        float dist = float.MaxValue;
+        if (players.Length > 0)
+        {
+            foreach (GameObject player in players)
+            {
+                dist = Vector3.Distance(player.transform.position, transform.position);
+                if (dist < resDist)
+                {
+                    result = player;
+                    resDist = dist;
+                }
+            }
+            cloPl = result;
+        }
+
+        else
+        {
+            cloPl = null;
+        }
+        return dist;
+    }
+
 }

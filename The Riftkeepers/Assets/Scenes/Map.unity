@@ -119,82 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &54049492
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4358407727391316375, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: hitbox
-      value: 
-      objectReference: {fileID: 54049493}
-    - target: {fileID: 4358407727391316375, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7516207853524365234, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_Name
-      value: germanshepherd
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 551.7049
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 6.555
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 274.85602
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9054111410753389114, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
---- !u!114 &54049493 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2823877657929842762, guid: 3f55d3e9911e3994d941029cdf5cad96, type: 3}
-  m_PrefabInstance: {fileID: 54049492}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e469fb34cfb7a4cefafa5600409e0251, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Dog_attack
 --- !u!1 &58548845
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2df52af707c64547813e4982f7e3b1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyManager
-  player: {fileID: 0}
+  players: []
+  spawnPoint: {fileID: 639867938}
   enemy1: {fileID: 1979620046}
 --- !u!4 &1166039853
 Transform:
@@ -951,7 +876,6 @@ SceneRoots:
   - {fileID: 69157192}
   - {fileID: 58548847}
   - {fileID: 8696846086782762182}
-  - {fileID: 54049492}
   - {fileID: 1166039853}
   - {fileID: 873139690}
   - {fileID: 1159876918}
