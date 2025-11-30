@@ -15,6 +15,8 @@ public class EnemyManager : NetworkBehaviour
     public GameObject enemy1;
     private float e1Delay = 3.5f;
 
+    private float nxtSpwn = 0;
+
     private Vector3 playerLoc;
 
 
@@ -22,39 +24,34 @@ public class EnemyManager : NetworkBehaviour
     {
         base.OnSpawned(asServer);
 
-        enabled = isOwner;
+        enabled = isServer;
     }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        playerLoc = spawnPoint.transform.position;
-        StartCoroutine(spawnEnemy(e1Delay, enemy1));
-
+        
         
     }
     private void Update()
     {
         players = FindPlayers();
-        if (players.Length > 0)
+        if (players.Length > 0 && Time.time > nxtSpwn)
         {
             foreach (GameObject player in players)
             {
                 playerLoc = player.transform.position;
                 playerLoc = playerLoc + new Vector3(Random.Range(-13f, 13f), Random.Range(0f, 5f), Random.Range(-13f, 13f));
+                Instantiate(enemy1, playerLoc, Quaternion.identity);
             }
+            nxtSpwn = Time.time + e1Delay;
         }
-        
-        
+
+
+
     }
 
-    private IEnumerator spawnEnemy(float rate, GameObject enemy)
-    {
-        yield return new WaitForSeconds(rate);
-        GameObject newEnemy = Instantiate(enemy, playerLoc, Quaternion.identity);
-        StartCoroutine(spawnEnemy(rate, enemy));
-    }
 
     GameObject[] FindPlayers()
     {

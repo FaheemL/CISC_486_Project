@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class CharStats : EntityStat
@@ -16,7 +17,10 @@ public class CharStats : EntityStat
     // Update is called once per frame
     void Update()
     {
-        
+        if (dead)
+        {
+            SceneManager.LoadSceneAsync(0);
+        }
     }
 
     public void updXp(int amount)

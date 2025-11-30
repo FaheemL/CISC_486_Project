@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/HealthBarStyle.uss?fileID=7433441132597879392&amp;guid=25e3616fbc1f2bc43851f10de8b89a8a&amp;type=3#HealthBarStyle" />
+    <ui:VisualElement name="Health" class="healthbar-size HelathBarStyle" style="flex-grow: 1; flex-direction: row; display: flex; position: absolute; height: 50px; background-image: url(&quot;project://database/Assets/HealthbarBackground.png?fileID=2800000&amp;guid=20081eb026cb18d4d955c0315687011d&amp;type=3#HealthbarBackground&quot;); top: 88%; left: auto; right: auto; bottom: auto; -unity-background-image-tint-color: rgb(181, 243, 225);">
+        <ui:VisualElement name="BarMask" style="flex-grow: 1; position: absolute; width: 100%; height: 100%; left: 0; overflow: hidden;">
+            <ui:VisualElement name="BarFill" class="HealthBarStyle" style="flex-grow: 1; position: absolute; height: 100%; background-image: url(&quot;project://database/Assets/HealthBarFill.png?fileID=2800000&amp;guid=4735609a37766b842b428a8cc89ad0f8&amp;type=3#HealthBarFill&quot;); overflow: hidden; width: 200px; top: 0; left: 0; visibility: visible;" />
+        </ui:VisualElement>
+        <ui:Label text="Health" name="HealthLabel" style="white-space: pre; position: absolute; width: 201px; height: 42px; -unity-text-align: middle-left; font-size: 16px; left: 8%;" />
+    </ui:VisualElement>
+</ui:UXML>

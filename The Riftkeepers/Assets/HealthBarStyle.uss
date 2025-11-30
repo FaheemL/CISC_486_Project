@@ -1,0 +1,6 @@
+:root {
+}
+
+.HelathBarStyle {
+    width: 200px;
+}

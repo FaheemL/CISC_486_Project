@@ -20,6 +20,10 @@ public class spider_m : MonoBehaviour
 
     private bool isAggroed = false;
 
+    private float delay = 1.5f;
+    private float cooldown = 0;
+
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -71,6 +75,12 @@ public class spider_m : MonoBehaviour
 
                     isAttacking = true;
                     hitbox?.ActivateHitbox();
+                    if (Time.time > cooldown)
+                    {
+                        cloPl.GetComponent<CharStats>().changeCHp(-GetComponent<enemyStats>().offence.value);
+                        cooldown = Time.time + delay;
+                    }
+
                 }
             }
             else

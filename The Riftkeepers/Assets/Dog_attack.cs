@@ -15,7 +15,7 @@ public class Dog_attack : MonoBehaviour
 
         if (other.CompareTag("Enemy") )
         {
-            other.GetComponent<enemyStats>().changeCHp(dog.offence.value);
+            other.GetComponent<enemyStats>().changeCHp(-dog.offence.value);
 
             
             Debug.Log("Dog hit the enemy!");
